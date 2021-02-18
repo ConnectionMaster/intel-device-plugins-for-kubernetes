@@ -64,8 +64,7 @@ The component has the same basic dependancies as the
 [generic plugin framework dependencies](../../README.md#about).
 
 The SGX device plugin requires Linux Kernel SGX drivers to be available. These drivers
-are currently available via [RFC patches on Linux Kernel Mailing List](https://git.kernel.org/pub/scm/linux/kernel/git/jarkko/linux-sgx.git).
-RFC *v41* was used to validate what is written in this document.
+are available in Linux 5.11.
 
 The hardware platform must support SGX Flexible Launch Control.
 
@@ -128,7 +127,7 @@ $ kubectl apply -k https://github.com/intel/intel-device-plugins-for-kubernetes/
 #### Deploy cert-manager
 
 ```bash
-$ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.0.3/cert-manager.yaml
+$ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.yaml
 ```
 
 #### Deploy Intel Device plugin operator
